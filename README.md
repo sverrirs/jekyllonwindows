@@ -23,6 +23,7 @@ This work and all derivatives are protected by the [CC BY 4.0](https://creativec
 ## You are free to:
 * Share — copy and redistribute the material in any medium or format
 * Adapt — remix, transform, and build upon the material for any purpose, even commercially.
-The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+Just as long as you give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 :heart:
