@@ -6,7 +6,7 @@ Unfortunately there is a lot of breaking changes between Jekyll v2.x and v3.x bu
 Visit the site: [https://labs.sverrirs.com/jekyll/](https://labs.sverrirs.com/jekyll/)
 
 # Get in touch
-This page was based heavily on the fantastic work done by Julian Thilo but expanded by Sverrir Sigmundarson to cover the new areas and concerns with Jekyll v3.x. 
+This page was based heavily on the fantastic work already done by [Julian Thilo](https://github.com/juthilo/run-jekyll-on-windows) but expanded and updated by Sverrir Sigmundarson to cover the new areas and concerns with Jekyll v3.x. 
 
 You can reach me for comments, updates or to propose changes by either submitting a new issue here on [Github](https://github.com/sverrirs/jekyllonwindows/issues) or via email at [jekyll@sverrirs.com](mailto:jekyll@sverrirs.com)
 
