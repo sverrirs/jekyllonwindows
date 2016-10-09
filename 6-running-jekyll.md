@@ -47,6 +47,6 @@ jekyll serve -w
 
 You can now run all of the above commands on your Windows machine. Congratulations! You have successfully set up Jekyll on Windows.
 
-Found something that wasn’t quite clear? Is something in this guide outdated? Did I forget something? Please look if somebody else noticed it already or file a new issue on GitHub if that’s not the case. Thanks!
+Found something that wasn’t quite clear? Is something in this guide outdated? Did I forget something? Please look if somebody else noticed it already or file a new issue on <a href="https://github.com/sverrirs/jekyllonwindows/issues">GitHub</a> if that’s not the case. Thanks!
 
-If you need help with using Jekyll in general, please visit the official Jekyll website by clicking the button below.
+If you need help with using Jekyll in general, please visit the <a href="https://jekyllrb.com/">official Jekyll website</a> by clicking the button below.
