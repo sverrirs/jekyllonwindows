@@ -24,6 +24,26 @@ gem install jekyll bundler
 
 Hit enter, watch, enjoy. This might take a while due to the number of dependencies.
 
+### If you use a proxy
+If behind a proxy, then you need to specify the proxy address in your gem command like so
+
+```
+gem install --http-proxy http://PROXY.ADDRESS:PORT jekyll bundler
+```
+
+You can specify a username and password as well
+
+```
+gem install --http-proxy http://USER:PASSWORD@PROXY.ADDRESS:PORT jekyll bundler
+```
+
+You can make these settings permanent by setting your `HTTP_PROXY` environment variable to the same proxy value (see below how to set environment variables on Windows)
+
+```
+SET HTTP_PROXY=http://USER:PASSWORD@PROXY.ADDRESS:PORT
+```
+
+
 ## SSL_connect error
 You can encounter an SSL_connect error when issuing `gem install` similar to
 

@@ -8,8 +8,15 @@ prev:
     title: Watch
 ---
 
-# No BOM allowed
-If there are <a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM (Byte order mark)</a> header characters in your UTF-8-encoded files, Jekyll will break. Make sure there are none. This will require you to open and re-save all of the files that have BOM characters.
+# UTF-8 Byte Order Marks
+<a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM (Byte order mark)</a> header characters are supported in Jekyll as of v3.1.1. The only thing needed is to explicitly specifying bom with the encoding in your `_config.yml`
+
+```
+encoding: bom|utf-8
+```
+
+Despite [BOM issues](https://github.com/jekyll/jekyll/issues/2853) being [fixed](https://github.com/jekyll/jekyll/pull/4404) starting in Jekyll v3.1.1, there still may be [issues with the BOM in certain cases](https://github.com/jekyll/jekyll/issues/5363) so for the time being removing the BOM characters from files may be a more reliable solution.
+
 
 # Set your encoding to UTF-8
 Depending on the version of Ruby and/or Jekyll you’re using, your site’s content, and maybe other factors, you may need to make sure Jekyll will read your site’s source as UTF-8.
