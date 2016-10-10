@@ -2,9 +2,9 @@
 encoding: UTF-8
 
 # Setup
-title:            Jekyll on Windows
+title:            Jekyll 3 on Windows
 tagline:          'Ultimate Guide'
-description:      'An updated guide to setting up <a href="http://jekyllrb.com" target="_blank">Jekyll</a> on Windows. Based work by <a href="http://jekyll-windows.juthilo.com/" target="_blank">Juthilo</a> and updated by <a href="https://sverrirs.com" target="_blank">sverrirs</a>.'
+description:      'An updated guide to setting up <a href="http://jekyllrb.com" target="_blank">Jekyll 3</a> on Windows. Based work by <a href="http://jekyll-windows.juthilo.com/" target="_blank">Juthilo</a> and updated by <a href="https://sverrirs.com" target="_blank">sverrirs</a>.'
 url:              https://labs.sverrirs.com/jekyll/
 baseurl:          "/jekyll/"
 
@@ -13,7 +13,7 @@ author:
   url:            https://sverrirs.com
 
 # Custom vars
-version:          1.2.0
+version:          1.3.0
 
 ############################################################
 # Copy the external static folders into the output site
