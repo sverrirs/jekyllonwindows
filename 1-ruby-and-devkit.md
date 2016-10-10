@@ -78,8 +78,8 @@ Then run both the init and review commands again.
 
 Alternatively, open `C:\RubyDevKit\config.yml`, enter the path of your Ruby install (preceded by a dash character) on its own line (e.g. ``` - C:\Ruby23-x64```), save the file, and then run the review command again to confirm the text was entered correctly.
 
-
-Continue on and complete installing the DevKit, binding it to your Ruby installation.
+## Binding the DevKit to Ruby
+Now complete your installation of the DevKit by binding it to your Ruby installation.
 
 ```
 ruby dk.rb install
@@ -88,5 +88,7 @@ ruby dk.rb install
 
 
 ## Summary
-That’s it! If all went well, you now have a working Ruby installation on your machine and you can build fully functional executables using the Ruby Development Kit. Ruby includes a way to install so-called gems—software packages that you can use from the command line. Jekyll is one of them! Click the button below to find out how you can successfully install it.
+That’s it! If all went well, you now have a working Ruby installation on your machine and you can build fully functional executables using the Ruby Development Kit. 
+
+Ruby includes a way to install so-called gems—software packages that you can use from the command line and Jekyll is one of them! Click the button below to find out how you can successfully install it.
 
