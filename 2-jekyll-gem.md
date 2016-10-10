@@ -43,6 +43,8 @@ Replacing _%RUBY_DIR%_ with your actual path.
 
 Try issuing the `gem install` command again and if it works you should add a new environment variable `SSL_CERT_FILE` with this same path.
 
+More information about this issue can be found on [Luis Lavena's Gist](https://gist.github.com/luislavena/f064211759ee0f806c88).
+
 ## Adding environment variables in Windows
 
 ### Windows 10 and Windows 8
