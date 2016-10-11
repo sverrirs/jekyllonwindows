@@ -5,7 +5,7 @@ step: 3
 sidebar_title: Syntax
 prev:
     url: 2-jekyll-gem.html
-    title: Jenkyl Gem
+    title: Jekyll Gem
 next:
     url: 4-markdown.html
     title: Markdown

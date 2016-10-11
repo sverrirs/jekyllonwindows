@@ -46,7 +46,7 @@ It is recommended to use listen version 2.7.8 or later.
 
 
 ## May not work
-For jekyll v3.0.x, until v3.3.x there is code blocking the use of the `--watch` feature on Windows. At the time of writing this <a href="https://github.com/jekyll/jekyll/commit/17bd63fa195083992b4493ee521729e84373ad77">issue has been fixed</a> but not yet released.
+In jekyll v3.3.0 there is currently code blocking the use of the `--watch` feature on Windows. At the time of writing this <a href="https://github.com/jekyll/jekyll/commit/17bd63fa195083992b4493ee521729e84373ad77">issue has been fixed</a> but not yet released.
 
 There is a temporary work-around that involves disabling this code in the Jekyll source.  
 

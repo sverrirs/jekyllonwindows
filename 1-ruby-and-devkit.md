@@ -5,7 +5,7 @@ step: 1
 sidebar_title: Ruby
 next:
     url: 2-jekyll-gem.html
-    title: Jenkyl Gem
+    title: Jekyll Gem
 ---
 
 Ruby is the programming language that Jekyll is written in. You’ll need to install Ruby and the corresponding DevKit, which is needed to build some of Jekyll’s dependencies as “native extensions”.
