@@ -44,22 +44,7 @@ gem install listen -v 3.1.5
 
 It is recommended to use listen version 2.7.8 or later.
 
-
-## May not work
-In jekyll v3.3.0 there is currently code blocking the use of the `--watch` feature on Windows. At the time of writing this <a href="https://github.com/jekyll/jekyll/commit/17bd63fa195083992b4493ee521729e84373ad77">issue has been fixed</a> but not yet released.
-
-There is a temporary work-around that involves disabling this code in the Jekyll source.  
-
-Open file `%RUBY_INSTALL_DIR%\lib\ruby\gems\2.2.0\gems\jekyll-3.3.0\lib\jekyll\commands\build.rb`. 
-
-Update line 74 to include a `false &&` block like so
-
-```
-73: def watch(site, options)
-74:  if false && Utils::Platforms.windows?
-75:   Jekyll.logger.warn "", "--watch arg is unsupported on Windows."
-```
-Save and close this file. Now when you use `jekyll serve` it should monitor file changes without problems.
+[Click here if you're running Jekyll 3.3.0](5x-wdm-gem-watchissue).
 
 
 # Summary
