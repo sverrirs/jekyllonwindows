@@ -11,9 +11,11 @@
       {% assign pages_list = site.pages | sort:"step" %}
       {% for node in pages_list %}
         {% if node.title != null %}
+        {% if node.step != null %}
           {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | prepend:site.baseurl }}">{{ node.step }}. {{ node.sidebar_title }}</a>
           {% endif %}
+        {% endif %}
         {% endif %}
       {% endfor %}
         

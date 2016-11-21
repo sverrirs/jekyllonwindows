@@ -24,6 +24,8 @@ gem install jekyll bundler
 
 Hit enter, watch, enjoy. This might take a while due to the number of dependencies.
 
+Did you get an [SSL_connection error](2x-jekyll-gem-sslerror)?
+
 ### If you use a proxy
 If behind a proxy, then you need to specify the proxy address in your gem command like so
 
@@ -37,90 +39,17 @@ You can specify a username and password as well
 gem install --http-proxy http://USER:PASSWORD@PROXY.ADDRESS:PORT jekyll bundler
 ```
 
-You can make these settings permanent by setting your `HTTP_PROXY` environment variable to the same proxy value (see below how to set environment variables on Windows)
+You can make these settings permanent by setting your `HTTP_PROXY` [environment variable](2x-jekyll-gem-windows-path) to the same proxy value.
 
 ```
 SET HTTP_PROXY=http://USER:PASSWORD@PROXY.ADDRESS:PORT
 ```
 
-
-## SSL_connect error
-You can encounter an SSL_connect error when issuing `gem install` similar to
-
-```
-ERROR: Could not find a valid gem 'jekyll' (>= 0), here is why: 
-Unable to download data from https://rubygems.org/ 
-- SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/latest_specs.4.8.gz)
-```
-
-To fix this issue download the `GlobalSignRootCA.pem` from <a href="https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem">Github</a> and place it in a folder inside your ruby install folder, e.g. `%RUBY_DIR%\ssl_cert\`
-
-Then execute the following command in your console to test
-```
-SET SSL_CERT_FILE=%RUBY_DIR%\ssl_cert\GlobalSignRootCA.pem
-```
-Replacing _%RUBY_DIR%_ with your actual path.
-
-Try issuing the `gem install` command again and if it works you should add a new environment variable `SSL_CERT_FILE` with this same path.
-
-More information about this issue can be found on [Luis Lavena's Gist](https://gist.github.com/luislavena/f064211759ee0f806c88).
-
-## Adding environment variables in Windows
-
-### Windows 10 and Windows 8
-* In Search, search for and then select: System (Control Panel)
-* Click the Advanced system settings link.
-* Click _Environment Variables_. In the section System Variables, find the SSL_CERT_FILE environment variable and select it. Click Edit. If the SSL_CERT_FILE environment variable does not exist, click New.
-* In the Edit System Variable (or New System Variable) window, specify the full path to the GlobalSignRootCA.pem file. Click OK. Close all remaining windows by clicking OK.
-* Reopen Command prompt window, and run your gem commands.
-
-### Windows 7
-* From the desktop, right click the Computer icon.
-* Choose Properties from the context menu.
-* Click the Advanced system settings link.
-* Click _Environment Variables_. In the section System Variables, find the SSL_CERT_FILE environment variable and select it. Click Edit. If the SSL_CERT_FILE environment variable does not exist, click New.
-* In the Edit System Variable (or New System Variable) window, specify the full path to the GlobalSignRootCA.pem file. Click OK. Close all remaining windows by clicking OK.
-* Reopen Command prompt window, and run your gem commands.
-
-### Windows Vista
-* From the desktop, right click the My Computer icon.
-* Choose Properties from the context menu.
-* Click the Advanced tab (Advanced system settings link in Vista).
-* Click Environment Variables. In the section System Variables, find the SSL_CERT_FILE environment variable and select it. Click Edit. If the SSL_CERT_FILE environment variable does not exist, click New.
-* In the Edit System Variable (or New System Variable) window, specify the full path to the GlobalSignRootCA.pem file. Click OK. Close all remaining windows by clicking OK.
-* Reopen Command prompt window, and run your gem commands.
-
-### Windows XP
-* Select Start, select Control Panel. double click System, and select the Advanced tab.
-* Click Environment Variables. In the section System Variables, find the SSL_CERT_FILE environment variable and select it. Click Edit. If the SSL_CERT_FILE environment variable does not exist, click New.
-* In the Edit System Variable (or New System Variable) window, specify the full path to the GlobalSignRootCA.pem file. Click OK. Close all remaining windows by clicking OK.
-* Reopen Command prompt window, and run your gem commands.
-
-## Still having SSL_connect issues?
-I know, it is super frustrating. But try updating the RubyGems software within your Ruby installation. For this you can use the rubygems-update gem, but you need to download it manually.
-
-* Find the version of RubyGems you have by issuing a `gem -v`. You are interested in the major and minor version, which are the first two numbers. 
-> For example, if gem -v reports “2.4.5.1” then you care about the leading “2.4”
-
-* Now go to [rubygems.org/gems/rubygems-update/versions](https://rubygems.org/gems/rubygems-update/versions) and look for the rubygems-update that has the first two numbers matching your RubyGem version and the largest third number. For example, my gem -v reported “2.4.2”; the highest number I see for “2.4” is 2.4.8 so that’s the one I want.
-
-* Click the link for the rubygems-update version you want. That will take you to a page discussing that version of RubyGems. On the right side of the page there is sidebar that has a list of links. Click the “Download” link and save the gem file somewhere accessible to your command line.
-
-* Install the gem using `gem install --local ~\where-I-saved-it\rubygems-update-2.4.8.gem`.
-
-* Update RubyGems using the command `update_rubygems`. Then try `gem -v` again to see that the RubyGems version is updated to the version expected.
-
-* Uninstall rubygems-update using the command `gem uninstall rubygems-update -x`
-
-Try installing a gem. If it succeeds, you are done!
-
-> If you are still getting some kind of SSL or certificate error, then you will need to do the steps discussed above and download the latest `GlobalSignRootCA.pem` certificate.
-
-## Other useful GEMs
+## Useful GEMs
 There are many enhancements available for jekyll sites. Most of them are distributed in the form of GEMs. Below are a few that are most commonly required when installing custom themes:
 
 ```
-gem install jekyll-paginate
+gem install jekyll-paginate-v2
 gem install jekyll-feed
 gem install jekyll-gist
 ```
