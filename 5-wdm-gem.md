@@ -44,7 +44,7 @@ gem install listen -v 3.1.5
 
 It is recommended to use listen version 2.7.8 or later.
 
-[Click here if you're running Jekyll 3.3.0](5x-wdm-gem-watchissue).
+[Click here if you're running Jekyll 3.3.0](5x-wdm-gem-watchissue.html).
 
 
 # Summary

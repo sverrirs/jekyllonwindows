@@ -24,7 +24,7 @@ gem install jekyll bundler
 
 Hit enter, watch, enjoy. This might take a while due to the number of dependencies.
 
-Did you get an [SSL_connection error](2x-jekyll-gem-sslerror)?
+Did you get an [SSL_connection error](2x-jekyll-gem-sslerror.html)?
 
 ### If you use a proxy
 If behind a proxy, then you need to specify the proxy address in your gem command like so
@@ -39,7 +39,7 @@ You can specify a username and password as well
 gem install --http-proxy http://USER:PASSWORD@PROXY.ADDRESS:PORT jekyll bundler
 ```
 
-You can make these settings permanent by setting your `HTTP_PROXY` [environment variable](2x-jekyll-gem-windows-path) to the same proxy value.
+You can make these settings permanent by setting your `HTTP_PROXY` [environment variable](2x-jekyll-gem-windows-path.html) to the same proxy value.
 
 ```
 SET HTTP_PROXY=http://USER:PASSWORD@PROXY.ADDRESS:PORT

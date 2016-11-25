@@ -23,6 +23,6 @@ If you encounter issues with any of the Markdown engines try issuing the followi
 gem install markdown
 ```
 
-[I really want to install redcarpet](4x-markdown-redcarpet).
+[I really want to install redcarpet](4x-markdown-redcarpet.html).
 
 

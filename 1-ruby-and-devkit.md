@@ -58,7 +58,7 @@ Now ensure the init command completed successfully.
 ruby dk.rb review
 ```
 
-[Did you get an error?](1x-ruby-and-devkit-error)
+[Did you get an error?](1x-ruby-and-devkit-error.html)
 
 
 ## Binding the DevKit to Ruby

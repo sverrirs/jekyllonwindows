@@ -26,7 +26,7 @@ SET SSL_CERT_FILE=%RUBY_DIR%\ssl_cert\GlobalSignRootCA.pem
 ```
 Replacing _%RUBY_DIR%_ with your actual path.
 
-Try issuing the `gem install` command again and if it works you should [add a new environment variable](2x-jekyll-gem-windows-path) `SSL_CERT_FILE` with this same path.
+Try issuing the `gem install` command again and if it works you should [add a new environment variable](2x-jekyll-gem-windows-path.html) `SSL_CERT_FILE` with this same path.
 
 More information about this issue can be found on [Luis Lavena's Gist](https://gist.github.com/luislavena/f064211759ee0f806c88).
 
