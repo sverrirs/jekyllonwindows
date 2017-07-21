@@ -31,7 +31,7 @@ Jekyll has some dependencies which, out of the box, only provide raw source code
 
 Click the button below and download the DevKit archive that corresponds to your Ruby installation and system architecture. Choose the file marked as _For use with Ruby 2.0 and above_. 
 
-Select either the 32bits or 64bits version depending on your system.
+> **!!!** Make sure you select the correct 32bits or 64bits version depending on your system.
 
 <div class="pagination">
     <a class="pagination-item full" href="http://rubyinstaller.org/downloads/">Download the Ruby Devkit</a>

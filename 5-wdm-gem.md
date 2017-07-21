@@ -36,7 +36,7 @@ Jekyll uses the listen Gem for auto-regeneration. The listen Gem is a dependency
 gem list | findstr listen
 ```
 
-Some versions of listen do not work on Windows. [jekyll/jekyll-help#64](https://github.com/jekyll/jekyll-help/issues/64) has some information on versions that worked on Windows in the past. Please refer to the [Versions table](/#versions) to learn which versions of listen have been tested as part of this guide. To install a specific version of the listen Gem, run this command and specify one of the tested versions.
+Some versions of listen do not work on Windows. [jekyll/jekyll-help#64](https://github.com/jekyll/jekyll-help/issues/64) has some information on versions that worked on Windows in the past. To install a specific version of the listen Gem, run the command below and specify the exact version.
 
 ```
 gem install listen -v 3.1.5

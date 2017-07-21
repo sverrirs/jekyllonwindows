@@ -41,6 +41,19 @@ jekyll 2.4.0 | Error: Permission denied - .
 
 If you encounter such an error, simply move your site to a subdirectory (e.g., `C:\Users\You\awesome-jekyll-site`) and try again.
 
+# Ensure that the Ruby DevKit is the correct bit version
+While executing the install commands for the native extensions, such as the `wdm` gem an error message such as this might appear
+
+```
+ruby.exe -r ./siteconf20170127-20196-ups7xn.rb extconf.rb
+checking for main() in -lkernel32... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+```
+
+As reported by [Mike Lloyd (@mxplusb)](https://github.com/mxplusb) one solution is to ensure that you installed the bit version (32 or 64 bit) of the DevKit that matches your operating system.
+
 # The End
 
 ```
